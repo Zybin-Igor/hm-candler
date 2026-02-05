@@ -1,0 +1,34 @@
+@use './helpers/' as *;
+
+:root {
+	--color-light: #FFFFFF;
+	--color-dark: #000000;
+	--color-light-gray: #FAFAFA;
+	--color-light-rose: #FFF8F3;
+	--color-braun: #7B6152;
+	--color-braun-gray: #A5978E;
+	--color-braun-rose:#A5978E;
+	--color-accent: #FFBD59;
+	--color-red:#834f58;
+
+	--font-family-base:'YesevaOne-Regular', sans-serif;
+	--font-family-accent:'Comfortaa-Regular', sans-serif;
+
+	--container-width:#{rem(1440)};
+	--container-padding-x:#{rem(10)};
+
+	@include laptop {
+		--container-width:#{rem(960)};
+	}
+
+	@include tablet {
+		--container-width:#{rem(640)};
+	}
+
+	@include mobile {
+		--container-width:#{rem(480)};
+	}
+	@include mobile-s{
+		--container-width:#{rem(360)};
+	}
+}
