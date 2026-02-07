@@ -1,0 +1,44 @@
+@use "../helpers/" as *;
+
+.header {
+  &_body {
+    padding-block: rem(27);
+
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 1rem;
+    }
+  }
+
+  &_overlay {
+    @include mobile-above {
+      display: contents;
+    }
+  }
+
+  &_menu {
+    &-list {
+      display: flex;
+      align-items: center;
+      column-gap: rem(20);
+    }
+
+		&-item {
+		text-transform:uppercase;
+		}
+
+    &-link {
+      padding: rem(4) rem(14);
+      font-family: var(--font-family-accent);
+			font-weight: 400;
+
+			&.is-active {
+				color: var(--color-dashed);
+			
+			}
+			
+    }
+  }
+}

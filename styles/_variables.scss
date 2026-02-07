@@ -10,9 +10,13 @@
 	--color-braun-rose:#A5978E;
 	--color-accent: #FFBD59;
 	--color-red:#834f58;
+	--color-dashed: rgb(255, 132, 0);
+	--color-icon: #BEA495;
 
-	--font-family-base:'YesevaOne-Regular', sans-serif;
-	--font-family-accent:'Comfortaa-Regular', sans-serif;
+	--border: #{rem(1)} solid var(--color-braun-gray);
+
+	--font-family-base:'Comfortaa-Regular' sans-serif;
+		--font-family-accent:'YesevaOne-Regular' sans-serif;
 
 	--container-width:#{rem(1440)};
 	--container-padding-x:#{rem(10)};

@@ -32,26 +32,28 @@ h5,.h6 {
 }
 
 h1,.h1 {
-  @include fluid-text(70, 30);
-  line-height: 1.2;
+  @include fluid-text(50, 18);
+  line-height: auto;
 }
 h2,.h2 {
-  @include fluid-text(58, 28);
-  line-height: 1.3;
+  @include fluid-text(40, 15);
+  line-height: auto;
 }
 h3,.h3 {
   @include fluid-text(40, 24);
+	line-height: auto;
 }
 h4,.h4 {
-  @include fluid-text(26, 18);
+  @include fluid-text(13, 8);
+	line-height: auto;
 }
-h5,.h5 {
-  @include fluid-text(24, 18);
-}
+// h5,.h5 {
+//   @include fluid-text(24, 18);
+// }
 
-h6,.h6 {
-  @include fluid-text(20, 16);
-}
+// h6,.h6 {
+//   @include fluid-text(20, 16);
+// }
 
 a,
 button,
@@ -62,3 +64,21 @@ select,
 svg * {
   transition-duration: var(--transition-duration);
 }
+
+a {
+	color: inherit;
+
+	@include hover {
+		color: var(--color-accent);
+	}
+
+	&[class] {
+		text-decoration: none;
+	}
+}
+
+:focus-visible {
+		outline: rem(3) dashed var(--color-dashed);
+		outline-offset: rem(4);
+		transition-duration: 0s !important;
+	}

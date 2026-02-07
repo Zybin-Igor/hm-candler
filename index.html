@@ -1,27 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>HM candler</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+		integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="./styles/main.css">
 	<script src="./scripts/main.js" type="module" defer></script>
 </head>
+
 <body>
-	<header class="header">
-		<a href="/" class="logo"><img src="./images/header/logo.png" alt="" class="logo_img" width="70" height="70" ></a>
-		<nav class="menu">
-			<ul class="menu_list">
-				<li class="menu_list-item"><a href="/" class="menu_list-link">Про нас</a></li>
-				<li class="menu_list-item"><a href="/" class="menu_list-link">Каталог</a></li>
-				<li class="menu_list-item"><a href="/" class="menu_list-link">Команда</a></li>
-				<li class="menu_list-item"><a href="/" class="menu_list-link">Відгуки</a></li>
-				<li class="menu_list-item"><a href="/" class="menu_list-link">Курси</a></li>
-				<li class="menu_list-item"><a href="/" class="menu_list-link">Контакти</a></li>
-			</ul>
-		</nav>
+	<header class="header" data-js-header>
+		<div class="header_body">
+			<div class="header_body-inner container ">
+				<a href="/" class=" header_logo logo" aria-label="Home" title="Home">
+					<img src="./images/header/logo.png" alt="" class="logo_img" width="70" height="70">
+				</a>
+				<div class="header_overlay">
+					<nav class="header_menu">
+						<ul class="header_menu-list">
+							<li class="header_menu-item">
+								<a href="/" class="header_menu-link is-active">Про нас</a>
+							</li>
+							<li class="header_menu-item">
+								<a href="/" class="header_menu-link">Каталог</a>
+							</li>
+							<li class="header_menu-item">
+								<a href="/" class="header_menu-link">Команда</a>
+							</li>
+							<li class="header_menu-item">
+								<a href="/" class="header_menu-link">Відгуки</a>
+							</li>
+							<li class="header_menu-item">
+								<a href="/" class="header_menu-link">Курси</a>
+							</li>
+							<li class="header_menu-item">
+								<a href="/" class="header_menu-link">Контакти</a>
+							</li>
+						</ul>
+					</nav>
+					<a href="tel: +4565789876" class="phone"><span class="icon"><svg width="15" height="15" viewBox="0 0 15 15"
+								fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M14.9987 10.3771L10.607 9.86905L8.50703 11.9678C6.14136 10.7654 4.21851 8.84368 3.01536 6.47943L5.1237 4.37237L4.61536 0H0.0236981C-0.459635 8.47822 6.51536 15.449 14.9987 14.966V10.3771Z"
+									fill="#BEA495" />
+							</svg></span>+45 65 78 98 76</a>
+				</div>
+				<button class="header_burger-button burger-button visible-mobile" type="button" aria-label="Open menu"
+					type="Open menu">
+					<span class="burger-button_line"></span>
+					<span class="burger-button_line"></span>
+					<span class="burger-button_line"></span>
+				</button>
+			</div>
+		</div>
 	</header>
-	<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil recusandae doloremque sapiente obcaecati praesentium molestiae commodi quidem pariatur placeat? Excepturi ipsam hic libero in delectus, perferendis explicabo nam velit quia?</p>
+	<section class="presentation container"></section>
+
+	<footer class="footer">
+	</footer>
 </body>
+
 </html>

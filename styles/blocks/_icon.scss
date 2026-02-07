@@ -1,0 +1,20 @@
+@use '../helpers/' as *;
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	column-gap: rem(5);
+	color: var(--color-icon);
+
+	&::before {
+		--size: #{rem(20)};
+		
+		@include square(var(--size));
+
+		// content: '';
+		// flex-shrink:0;
+		// background-position: start;
+		// background-size: contain;
+		// background-repeat: no-repeat;
+	}
+}
